@@ -19,6 +19,11 @@ To set up the E-Commerce Back End on your local machine, follow these steps:
 2. Open the `.env.example` file, input your database username and password, and then rename the file to `.env`.
 3. Launch your terminal and execute the following commands:
    - `npm install`
+   - ```
+        mysql -u root -p
+        *enter your password*
+        source db/schema.sql;
+        ```
    - `npm run seeds`
    - `npm start`
 
@@ -31,8 +36,9 @@ This project relies on the following dependencies:
 Ensure you have these dependencies installed before proceeding with the installation steps.
 
 ## Usage
-[Demo](https://watch.screencastify.com/v/2YOCEZYPz2CErNdHQLCq)  
-If the video link is inaccessible, you can also locate it in the `assets/demo_video` directory.  
+[Seed Demo](https://watch.screencastify.com/v/8dIRDS5I4FjWXe3GScte)  
+[Insomnia Demo](https://watch.screencastify.com/v/2YOCEZYPz2CErNdHQLCq)  
+If the video links are inaccessible, you can also locate them in the `assets/demo_videos` directory.  
 
 The backend functionality can be accessed through a tool like Insomnia, allowing you to create, modify, and remove various categories, products, and tags.
 
