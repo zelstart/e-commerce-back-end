@@ -27,9 +27,10 @@ router.get('/', (req, res) => {
 // be sure to include its associated Category and Tag data
 router.get('/:id', (req, res) => {
   Product.findByPk(req.params.id, {
-    include: [{
-      model: Category, Tag
-    }]
+    include: [
+      { model: Category },
+      { model: Tag }
+    ]
   })
   .then(productById => {
     if (!productById) {
