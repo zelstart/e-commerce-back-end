@@ -32,6 +32,7 @@ This project relies on the following dependencies:
 - Node.js
 - mysql2
 - Sequelize
+- dotenv
 
 Ensure you have these dependencies installed before proceeding with the installation steps.
 
